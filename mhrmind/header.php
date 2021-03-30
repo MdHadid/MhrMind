@@ -41,7 +41,7 @@
 	                  	<!-- end header inner -->
 						<div class="site-branding">
 							<?php
-							if( ! the_custom_logo() ) : 
+								the_custom_logo();
 								if ( is_front_page() && is_home() ) :
 									?>
 									<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -55,9 +55,8 @@
 								if ( $mhrmind_description || is_customize_preview() ) :
 									?>
 									<p class="site-description"><?php echo $mhrmind_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-								<?php endif;
-							else: the_custom_logo();
-						    endif; ?>
+								<?php endif; 
+							?>
 						</div><!-- .site-branding -->
 	                  </div>
 	                </div>
@@ -86,7 +85,7 @@
 	         </div>
 	       </div>
 	     </div>
-		<nav id="site-navigation" class="main-navigation">
+		<!--<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mhrmind' ); ?></button>
 			<?php
 			wp_nav_menu(
@@ -96,5 +95,5 @@
 				)
 			);
 			?>
-		</nav><!-- #site-navigation -->
+		</nav>-->
 	</header><!-- #masthead -->

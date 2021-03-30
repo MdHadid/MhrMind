@@ -989,7 +989,7 @@ Use it to make something cool, have fun, and share what you've learned.
 .header_information::after {
     width: 75px;
     height: 90px;
-    background: url(../images/top_arrow.png);
+    background: url(assets/images/top_arrow.png);
     display: block;
     content: "";
     position: absolute;
@@ -1003,13 +1003,13 @@ background-repeat: no-repeat;
  .header_information::before {
     width: 96px;
     height: 49px;
-    background: url(../images/top_arrow1.png);
+    background: url(assets/images/top_arrow1.png);
     display: block;
     content: "";
     position: absolute;
     top: 0;
    left: -131px;
-background-repeat: no-repeat;
+   background-repeat: no-repeat;
 }
 
 
@@ -1037,7 +1037,7 @@ width: 24%;
     width: 44px;
 height: 88px;
 margin-left: -51px;
-    background: url(../images/top_arrow2.png);
+    background: url(assets/images/top_arrow2.png);
     display: block;
     content: "";
     position: absolute;
@@ -1141,9 +1141,6 @@ margin-right: 10px;
      font-size: 50px;
      line-height: 58px;
      color: #fff;
-}
- .slider_section {
-     padding-top: 134px;
 }
  .black_nolmal {
      font-weight: normal;
@@ -1668,14 +1665,19 @@ padding-bottom: 20px;
      color: #fff;
      font-size: 18px;
      line-height: 22px;
-     text-align: center;
-   
+     text-align: center;  
 }
  .copyright a {
      color: #fff;
 }
  .copyright a:hover {
      color: #f4b328 ;
+}
+.site-main {
+     padding-top: 134px;
+}
+.entry-footer span {
+     margin-right: 10px;
 }
 /** end footer **/
 /*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
