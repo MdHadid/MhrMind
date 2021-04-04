@@ -368,5 +368,14 @@ $(function () {
 		interval: 5000
 	});
 
+	/* Header search 
+	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+	// optional
+	$(document).ready(function () {
+		$('.mean-last .nav-menu-search').on('click', function () {
+			$('.search-bar').toggle('1s');
+		});
+	});
+
 
 });

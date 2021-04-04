@@ -51,6 +51,7 @@ if ( ! function_exists( 'mhrmind_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'mhrmind' ),
+				'menu-2' => esc_html__( 'Account', 'mhrmind' ),
 			)
 		);
 
@@ -91,15 +92,7 @@ if ( ! function_exists( 'mhrmind_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		add_theme_support(
-			'custom-logo',
-			array(
-				'height'      => 250,
-				'width'       => 250,
-				'flex-width'  => true,
-				'flex-height' => true,
-			)
-		);
+		add_theme_support('custom-logo');
 	}
 endif;
 add_action( 'after_setup_theme', 'mhrmind_setup' );
@@ -124,13 +117,13 @@ add_action( 'after_setup_theme', 'mhrmind_content_width', 0 );
 function mhrmind_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'mhrmind' ),
+			'name'          => esc_html__( 'MhrMind Footer', 'mhrmind' ),
 			'id'            => 'sidebar-1',
 			'description'   => esc_html__( 'Add widgets here.', 'mhrmind' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_widget' => '<div class="col-lg-3 col-md-6 col-sm-6"><div class="address">',
+			'after_widget'  => '</div></div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 }

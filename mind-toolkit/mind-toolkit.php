@@ -56,7 +56,7 @@ register_deactivation_hook( __FILE__, 'mind_toolkit_kit_deactivate' );
  * admin-specific hooks, and public-facing site hooks.
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-mind-toolkit.php';
-require plugin_dir_path( __FILE__ ) . 'includes/class-bootstrap-navwalker.php';
+require plugin_dir_path( __FILE__ ) . 'includes/widgets/mind-toolkit-contact.php';
 
 
 /**

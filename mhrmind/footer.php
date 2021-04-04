@@ -13,7 +13,7 @@
 
 	<!--  footer -->
     <footer>
-      <div class="footer ">
+      <div class="footer">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -28,59 +28,11 @@
             </div>
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
               <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
-                  <div class="address">
-                    <h3>Contact us </h3>
-                    <ul class="loca">
-                      <li>
-                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/icon/loc.png" alt="#" /></a>London 145
-                        <br>United Kingdom </li>
-                        <li>
-                          <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/icon/email.png" alt="#" /></a>demo@gmail.com </li>
-                          <li>
-                            <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/icon/call.png" alt="#" /></a>+12586954775 </li>
-                          </ul>
-                          <ul class="social_link">
-                            <li><a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/icon/fb.png"></a></li>
-                            <li><a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/icon/tw.png"></a></li>
-                            <li><a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/icon/lin(2).png"></a></li>
-                            <li><a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/icon/instagram.png"></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="address">
-                          <h3>Courses</h3>
-                          <ul class="Menu_footer">
-                            <li class="active"> <a href="#">Masters Degree</a> </li>
-                            <li><a href="#">Post GraduateU</a> </li>
-                            <li><a href="#">Ndergraduate</a> </li>
-                            <li><a href="#">Engineering</a> </li>
-                            <li><a href="#">Ph.D Degree</a> </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="address">
-                          <h3>Information</h3>
-                          <ul class="Links_footer">
-                            <li class="active"><a href="#">Campus Tour</a> </li>
-                            <li><a href="#">Student Lifes</a> </li>
-                            <li><a href="#">Cholarship</a> </li>
-                            <li><a href="#"> Admission</a> </li>
-                            <li><a href="#">Leadership</a> </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6 col-sm-6 ">
-                        <div class="address">
-                          <a href="index.html"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/logo1.jpg" alt="logo"></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  <?php dynamic_sidebar('sidebar-1'); ?>
               </div>
+            </div>
+          </div>
+        </div>
 	      <div class="copyright">
 	        <div class="container">
 	          <p>Copyright © 2019 Design by <a href="https://html.design/">Free Html Templates </a></p>

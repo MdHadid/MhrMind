@@ -68,18 +68,22 @@
 	                <div class="limit-box">
 	                  <nav class="main-menu ">
 	                    <ul class="menu-area-main">
-	                      <li class="active"> <a href="index.html">Home</a> </li>
-	                      <li> <a href="#courses">My Courses </a> </li>
-	                      <li> <a href="#about">About</a> </li>
-	                      <li> <a href="#learn">My Profile</a> </li>
-	                      <li> <a href="#important">Become an Instructor</a> </li>
-	                      <li> <a href="#contact">Contact</a> </li>
-	                     </ul>
+	                    	<?php wp_nav_menu(array(
+                                'theme_location' => 'menu-1'
+                    	    )); ?>
+	                    </ul>
 	                   </nav>
 	                 </div>
 	               </div> 
 	               <div class="mean-last">
-                       <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/search_icon.png" alt="#" /></a> <a href="#">login/sing up</a></div>              
+                       <img class="nav-menu-search" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/search_icon.png" alt="#" />
+                       <?php wp_nav_menu(array(
+                            'theme_location' => 'menu-2'
+                	    )); ?>
+                	    <form class="search-bar" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+						    <input type="text" name="s" value="Search..." onfocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search...&#39;;}">
+						</form>
+                   </div>              
 	             </div>
 	           </div>
 	         </div>

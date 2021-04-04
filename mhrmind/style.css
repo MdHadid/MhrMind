@@ -505,7 +505,7 @@ Use it to make something cool, have fun, and share what you've learned.
  .dropdown-bar .dropdown-link li a img {
      margin-right: 7px;
 }
- .dropdown-bar .dropdown-link li.active {
+ .dropdown-bar .dropdown-link li.current-menu-itemti {
      font-weight: bold;
 }
  .right-dropdown-language .dropdown-link {
@@ -842,7 +842,7 @@ Use it to make something cool, have fun, and share what you've learned.
      height: 17px;
      font-size: 12px;
 }
-.menu-area-main li.active a {
+.menu-area-main li.current-menu-item a {
      color: #f4b328;
      }
 
@@ -1511,7 +1511,7 @@ border-radius:50px;
 }
  .footer h2 {
     color: #fff;
-     font-size: 40px;
+     font-size: 35px;
      line-height: 40px;
      text-align: left;
 }
@@ -1538,7 +1538,7 @@ padding-bottom: 20px;
      box-shadow: inherit;
      border: inherit;
      width: 70%;
-     font-size: 19px;
+     font-size: 18px;
      box-shadow: #b0b0b0 0px -2px 9px 0px;
      border-radius: 30px 0px 0px 30px;
      text-transform: uppercase;
@@ -1663,7 +1663,7 @@ padding-bottom: 20px;
 }
  .copyright p {
      color: #fff;
-     font-size: 18px;
+     font-size: 17px;
      line-height: 22px;
      text-align: center;  
 }
@@ -1681,3 +1681,47 @@ padding-bottom: 20px;
 }
 /** end footer **/
 /*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
+
+.menu-account-container, .menu-account-container ul {
+     display: inline-block;
+}
+
+.mean-last .nav-menu-search {
+    cursor: pointer;
+}
+
+.mean-last .search-bar {
+     display: none;
+     margin-top: 10px;
+}
+
+.mean-last .search-bar input[type="text"] {
+     padding-left: 10px;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    font-size: 16px;
+    border: #f4b328 solid 1px;
+    background-color: #f4b328;
+    color: #fff;
+    padding: 9px 0px;
+    max-width: 171px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+[type=reset]:hover, [type=submit]:hover, button:hover, html [type=button]:hover {
+    background-color: #200769;
+    border: #200769 solid 1px;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+[type=text], [type=search] {
+    border: 1px solid gray;
+    padding: 8px 12px;
+    margin: 10px 0;
+}
