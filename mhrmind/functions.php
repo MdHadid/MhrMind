@@ -191,6 +191,33 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer/customizer-config.php';
+
+if ( !function_exists( 'mhrmind_option' ) ) {
+
+	function mhrmind_option( $option ) {
+		// Get options
+		return get_theme_mod( $option, mhrmind_defaults( $option ) );
+	}
+
+}
+
+if ( !function_exists( 'mhrmind_defaults' ) ) {
+
+	function mhrmind_defaults( $options ) {
+
+		$default = array(
+		);
+
+		if ( !empty( $default[ $options ] ) )
+			return $default[ $options ];
+	}
+
+}
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {

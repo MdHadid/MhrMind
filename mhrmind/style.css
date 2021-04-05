@@ -1529,11 +1529,11 @@ padding-bottom: 20px;
      border-radius: 10px;
      padding: 20px 35px;
 }
- .news {
+ .mc4wp-form-fields {
     padding-bottom: 50px;
    margin-top: -35px;
 }
- .news .newslatter {
+ .mc4wp-form-fields .newslatter {
      padding: 18px 30px;
      box-shadow: inherit;
      border: inherit;
@@ -1543,7 +1543,7 @@ padding-bottom: 20px;
      border-radius: 30px 0px 0px 30px;
      text-transform: uppercase;
 }
- .submit {
+.mc4wp-form-fields .submit {
     padding: 18px 45px;
     border: #f4b328 solid 1px;
      background: #f4b328;
@@ -1557,6 +1557,10 @@ padding-bottom: 20px;
      box-shadow: #b0b0b0 0px -2px 9px 0px;
       text-transform: uppercase;
       transition: all 0.3s ease-in;
+}
+.mc4wp-response .mc4wp-alert, .mc4wp-response .mc4wp-success {
+     color: #fff;
+     margin-bottom: 20px;
 }
  .submit:hover {
      background: #200769;
@@ -1584,14 +1588,14 @@ padding-bottom: 20px;
      background-color: #f4b328 ;
      border-radius: 20px;
 }
- ul.Menu_footer li{
+.footer ul.menu li{
     padding-bottom: 6px;
      display: block;
      color: #3e7f21;
      position: relative;
 }
 
- ul.Menu_footer li:before {
+.footer ul.menu li:before {
   content: "";
   position: absolute;
   width: 12px;
@@ -1601,14 +1605,14 @@ padding-bottom: 20px;
   margin-top: 9px;
  }
 
- ul.Menu_footer li a {
+.footer ul.menu li a {
      display: block;
      color: #fcfbfb;
      font-size: 17px;
      padding-left: 30px;
     
 }
- ul.Menu_footer li a:hover{
+.footer ul.menu li a:hover{
      color: #f4b328 ;
 }
  ul.Links_footer {

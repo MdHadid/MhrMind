@@ -9,7 +9,10 @@
  * @package MhrMind
  */
 
-?>
+$newsletter_title = mhrmind_option('newsletter_title');
+$newsletter_desc = mhrmind_option('newsletter_desc');
+$newsletter_shortcode = mhrmind_option('newsletter_shortcode');
+$copyright_text = mhrmind_option('copyright_text'); ?>
 
 	<!--  footer -->
     <footer>
@@ -17,14 +20,11 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <form class="news">
-                <input class="newslatter" placeholder="Email" type="text" name=" Email">
-                <button class="submit">Subscribe</button>
-              </form>
+              <?php echo do_shortcode($newsletter_shortcode); ?>
             </div>
             <div class="col-md-12">
-              <h2>Newsletter</h2>
-              <span>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in  </span>
+              <h2><?php echo wp_kses_post( $newsletter_title ); ?></h2>
+              <span><?php echo wp_kses_post( $newsletter_desc ); ?></span>
             </div>
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
               <div class="row">
@@ -35,7 +35,7 @@
         </div>
 	      <div class="copyright">
 	        <div class="container">
-	          <p>Copyright © 2019 Design by <a href="https://html.design/">Free Html Templates </a></p>
+	          <p><?php echo wp_kses_post( $copyright_text ); ?></p>
 	        </div>
 	      </div>
 	    </div>

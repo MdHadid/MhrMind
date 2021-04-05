@@ -37,7 +37,7 @@ class Mind_contact_info extends WP_Widget{
                 </li>
             <?php endif; ?>
 
-            <?php if( $instance['phone'] != '' ): ?>
+            <?php if( $instance['phone_link'] != '' ): ?>
                 <li>
                     <a href="<?php echo esc_url( $instance['phone_link'] ); ?>">
                         <img src="<?php echo plugin_dir_url( dirname( __FILE__ ) ) . 'icon/call.png'; ?>" alt="#" />
@@ -46,6 +46,20 @@ class Mind_contact_info extends WP_Widget{
                 </li>
             <?php endif; ?>
         </ul>
+        <ul class="social_link">
+            <?php if( $instance['fb_link'] != '' ): ?>
+                <li><a href="<?php echo esc_url( $instance['fb_link'] ); ?>" class="facebook"><img src="<?php echo plugin_dir_url( dirname( __FILE__ ) ) . 'icon/fb.png'; ?>" alt="#" /></a></li>
+            <?php endif;
+            if( $instance['tw_link'] != '' ): ?>
+                <li><a href="<?php echo esc_url( $instance['tw_link'] ); ?>" class="twitter"><img src="<?php echo plugin_dir_url( dirname( __FILE__ ) ) . 'icon/tw.png'; ?>" alt="#" /></a></li>
+            <?php endif; 
+            if( $instance['lin_link'] != '' ): ?>
+                <li><a href="<?php echo esc_url( $instance['lin_link'] ); ?>" class="linkedin"><img src="<?php echo plugin_dir_url( dirname( __FILE__ ) ) . 'icon/lin.png'; ?>" alt="#" /></a></li>
+            <?php endif;
+            if( $instance['in_link'] != '' ): ?>
+                <li><a href="<?php echo esc_url( $instance['in_link'] ); ?>" class="instagram"><img src="<?php echo plugin_dir_url( dirname( __FILE__ ) ) . 'icon/in.png'; ?>" alt="#" /></a></li>
+            <?php endif; ?>
+        </ul>                   
         <?php
         echo wp_kses_post($after_widget);
     }
@@ -60,6 +74,10 @@ class Mind_contact_info extends WP_Widget{
         $instance['email']           = $new_instance['email'];
         $instance['email_link']      = $new_instance['email_link'];
         $instance['phone_link']      = $new_instance['phone_link'];
+        $instance['fb_link']         = $new_instance['fb_link'];
+        $instance['tw_link']         = $new_instance['tw_link'];
+        $instance['lin_link']        = $new_instance['lin_link'];
+        $instance['in_link']         = $new_instance['in_link'];
         return $instance;
     }
 
@@ -72,7 +90,10 @@ class Mind_contact_info extends WP_Widget{
             'phone_link'        => esc_html__('tel:+11234567890', 'mind-toolkit'),
             'email'             => esc_html__('demo@gmail.com', 'mind-toolkit'),
             'email_link'        => esc_html__('mailto:demo@gmail.com', 'mind-toolkit'),
-
+            'fb_link'           => esc_html__('#', 'mind-toolkit'),
+            'tw_link'           => esc_html__('#', 'mind-toolkit'),
+            'lin_link'          => esc_html__('#', 'mind-toolkit'),
+            'in_link'           => esc_html__('#', 'mind-toolkit'),
         );
         $instance = wp_parse_args((array)$instance, $defaults);
         ?>
@@ -122,6 +143,34 @@ class Mind_contact_info extends WP_Widget{
             <label for="<?php echo esc_attr($this->get_field_id('phone_link')); ?>">
                 <?php esc_html_e('Number Link:', 'mind-toolkit'); ?>
                 <input class="widget" id="<?php echo esc_attr($this->get_field_id('phone_link')); ?>" name="<?php echo esc_attr($this->get_field_name('phone_link')); ?>" type="text" value="<?php echo wp_kses_post($instance['phone_link']); ?>" />
+            </label>
+        </p>
+
+        <p>
+            <label for="<?php echo esc_attr($this->get_field_id('fb_link')); ?>">
+                <?php esc_html_e('Facebook Link:', 'mind-toolkit'); ?>
+                <input class="widget" id="<?php echo esc_attr($this->get_field_id('fb_link')); ?>" name="<?php echo esc_attr($this->get_field_name('fb_link')); ?>" type="text" value="<?php echo wp_kses_post($instance['fb_link']); ?>" />
+            </label>
+        </p>
+
+        <p>
+            <label for="<?php echo esc_attr($this->get_field_id('tw_link')); ?>">
+                <?php esc_html_e('Twitter Link:', 'mind-toolkit'); ?>
+                <input class="widget" id="<?php echo esc_attr($this->get_field_id('tw_link')); ?>" name="<?php echo esc_attr($this->get_field_name('tw_link')); ?>" type="text" value="<?php echo wp_kses_post($instance['tw_link']); ?>" />
+            </label>
+        </p>
+
+        <p>
+            <label for="<?php echo esc_attr($this->get_field_id('lin_link')); ?>">
+                <?php esc_html_e('Linkedin Link:', 'mind-toolkit'); ?>
+                <input class="widget" id="<?php echo esc_attr($this->get_field_id('lin_link')); ?>" name="<?php echo esc_attr($this->get_field_name('lin_link')); ?>" type="text" value="<?php echo wp_kses_post($instance['lin_link']); ?>" />
+            </label>
+        </p>
+
+        <p>
+            <label for="<?php echo esc_attr($this->get_field_id('in_link')); ?>">
+                <?php esc_html_e('Google Plus Link:', 'mind-toolkit'); ?>
+                <input class="widget" id="<?php echo esc_attr($this->get_field_id('in_link')); ?>" name="<?php echo esc_attr($this->get_field_name('in_link')); ?>" type="text" value="<?php echo wp_kses_post($instance['in_link']); ?>" />
             </label>
         </p>
 
