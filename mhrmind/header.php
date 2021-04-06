@@ -22,7 +22,12 @@
 
 <body class="main-layout" <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
 <!-- loader  -->
+  <div class="loader_bg">
+    <div class="loader"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/loading.gif" alt="#" /></div>
+  </div>
+<!-- end loader -->
 
 <!-- end loader -->
 <div id="page" class="site">

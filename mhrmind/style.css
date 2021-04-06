@@ -1051,7 +1051,6 @@ background-repeat: no-repeat;
 }
  
  .header-top {
-     background:url(../images/banner2.jpg);
      background-size: 100% 100%;
      background-repeat: no-repeat;
      padding-bottom: 50px;
@@ -1145,6 +1144,10 @@ margin-right: 10px;
  .black_nolmal {
      font-weight: normal;
      color: #000;
+}
+
+.slider_section {
+     padding-top: 85px;
 }
 .carousel-indicators {
     left: inherit;

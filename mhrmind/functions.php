@@ -140,13 +140,13 @@ function mhrmind_scripts() {
 
 	wp_enqueue_style( 'mhrmind-responsive', get_template_directory_uri() . '/assets/css/responsive.css', array(), _S_VERSION );
 
+	wp_enqueue_style( 'mhrmind-meanmenu', get_template_directory_uri() . '/assets/css/meanmenu.css', array(), _S_VERSION );
+
 	wp_enqueue_style( 'mhrmind-jquery-mCustomScrollbar', get_template_directory_uri() . '/assets/css/jquery.mCustomScrollbar.min.css', array(), _S_VERSION );
 
 	wp_enqueue_style( 'mhrmind-font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.css', array(), _S_VERSION );
 
 	wp_enqueue_style( 'mhrmind-fancybox', get_template_directory_uri() . '/assets/css/jquery.fancybox.min.css', array(), _S_VERSION );
-
-	wp_enqueue_script( 'mhrmind-jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', array(), _S_VERSION, true );
 
 	wp_enqueue_script( 'mhrmind-jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', array(), _S_VERSION, true );
 

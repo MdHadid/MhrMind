@@ -17,7 +17,7 @@ $(function () {
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(document).ready(function () {
-		$('header nav').meanmenu();
+		$('nav.main-menu').meanmenu();
 	});
 
 	/* Tooltip

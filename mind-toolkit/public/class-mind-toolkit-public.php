@@ -70,8 +70,7 @@ class Mind_Toolkit_Public {
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-
-
+        wp_enqueue_script( 'mind-toolkit-main-script', plugin_dir_url( __FILE__ ) . '../public/js/mind-toolkit-public.js', array( 'jquery' ), false );
 	}
 
 }

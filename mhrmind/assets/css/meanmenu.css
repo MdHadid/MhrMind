@@ -1,6 +1,8 @@
 /*--------------------------------------------------------------------- File Name: meanmenu.css ---------------------------------------------------------------------*/
 
-
+.menu-menu-1-container .menu {
+     display: block !important;
+}
  a.meanmenu-reveal {
      display: none;
 }

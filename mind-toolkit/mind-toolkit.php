@@ -271,10 +271,10 @@ final class Elementor_Mind_Toolkit_Elementor {
 	public function init_widgets() {
 
 		//Include widget files
-		//require_once( __DIR__ . '/includes/widgets/mind-toolkit-banner.php' );
+		require_once( __DIR__ . '/includes/el-widgets/mind-toolkit-slider.php' );
 
 		//Register widget
-		//\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Kit_Banner_Widget() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Slider_Widget() );
 	}
 
 	
