@@ -1149,6 +1149,13 @@ margin-right: 10px;
 .slider_section {
      padding-top: 85px;
 }
+
+.carousel-item.active {
+     display: block;
+}
+.elementor-editor-active .carousel-item {
+     display: block;
+}
 .carousel-indicators {
     left: inherit;
     top: 40%;

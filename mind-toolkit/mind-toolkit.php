@@ -272,9 +272,21 @@ final class Elementor_Mind_Toolkit_Elementor {
 
 		//Include widget files
 		require_once( __DIR__ . '/includes/el-widgets/mind-toolkit-slider.php' );
+		require_once( __DIR__ . '/includes/el-widgets/mind-toolkit-about.php' );
+		require_once( __DIR__ . '/includes/el-widgets/mind-toolkit-our.php' );
+		require_once( __DIR__ . '/includes/el-widgets/mind-toolkit-course.php' );
+		require_once( __DIR__ . '/includes/el-widgets/mind-toolkit-learn.php' );
+		require_once( __DIR__ . '/includes/el-widgets/mind-toolkit-make.php' );
+		require_once( __DIR__ . '/includes/el-widgets/mind-toolkit-contact.php' );
 
 		//Register widget
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Slider_Widget() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_About_Widget() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Our_Widget() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Course_Widget() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Learn_Widget() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Make_Widget() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Contact_Widget() );
 	}
 
 	
