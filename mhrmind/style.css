@@ -96,9 +96,9 @@ Use it to make something cool, have fun, and share what you've learned.
 }
  p {
      margin: 0px;
-     font-weight: 300;
-     font-size: 15px;
-     line-height: 24px;
+     font-weight: 500;
+     font-size: 17px;
+     line-height: 1.8;
 }
  a {
      color: #222222;
@@ -843,7 +843,7 @@ Use it to make something cool, have fun, and share what you've learned.
      font-size: 12px;
 }
 .menu-area-main li.current-menu-item a {
-     color: #f4b328;
+     color: #9c0;
      }
 
  .main-menu {
@@ -868,7 +868,7 @@ Use it to make something cool, have fun, and share what you've learned.
      text-transform: uppercase;
 }
 
- .main-menu ul>li a:hover {    color: #f4b328;}
+ .main-menu ul>li a:hover {    color: #9c0;}
  .main-menu ul li:last-child a {
      padding-right: 0;
 }
@@ -978,11 +978,9 @@ Use it to make something cool, have fun, and share what you've learned.
     margin-right: 0;
     margin-bottom: 0;
     position: absolute;
-    width: 88%;
-    
+    width: 95%;
     height: 90px;
-   
-   margin-top: -20px;
+    margin-top: -20px;
     right: 0;
 }
 
@@ -1005,7 +1003,7 @@ background-repeat: no-repeat;
     height: 49px;
     background: url(assets/images/top_arrow1.png);
     display: block;
-    content: "";
+    content: none;
     position: absolute;
     top: 0;
    left: -131px;
@@ -1017,10 +1015,10 @@ background-repeat: no-repeat;
    display: inline-block !important;
 background: #0f052f;
 margin: 0 !important;
-padding: 30px 36px 30px 16px;
+padding: 10px 36px 10px 16px;
 float: right;
 margin-right: 110px !important;
-width: 24%;
+width: 28%;
 }
 
 
@@ -1060,7 +1058,7 @@ background-repeat: no-repeat;
      z-index: 999;
      width: 100%;
      padding: 20px 0px 0px 0px;
-     background: #efefef;
+     background: #fff;
 }
  .logo a {
      font-size: 40px;
@@ -1085,15 +1083,15 @@ background-repeat: no-repeat;
  .text-bg p {
      font-size: 17px;
      display: block;
-     color: #200769;
+     color: #14569D;
      line-height: 25px;
      padding-bottom: 50px;
      font-weight: 500;
 }
  .text-bg a {
      font-size: 16px;
-border: #f4b328 solid 1px;
-background-color: #f4b328;
+border: #9c0 solid 1px;
+background-color: #9c0;
 color: #fff;
 padding: 9px 0px;
 max-width: 171px;
@@ -1105,8 +1103,8 @@ border-radius: 30px;
 margin-right: 10px;
  }
  .text-bg a:hover {
-     background-color: #200769;
-     border: #200769 solid 1px;
+     background-color: #14569D;
+     border: #14569D solid 1px;
     color: #fff;
 }
  .text {
@@ -1165,7 +1163,7 @@ margin-right: 10px;
 }
 .carousel-caption {position: inherit;}
 .carousel-indicators .active {
-    background-color: #f4b328;
+    background-color: #9c0;
 }
 .carousel-indicators li {width: 15px; height: 15px; border-radius: 10px; background: #000; margin: 5px 0px;}
 .padding_dd {padding: 0px 50px;}
@@ -1184,7 +1182,7 @@ margin-right: 10px;
  .about .about-box h2 {
      padding: 0;
      font-weight: bold;
-     color: #f4b328;
+     color: #9c0;
      line-height: 50px;
      font-size: 50px;
 
@@ -1198,8 +1196,8 @@ margin-right: 10px;
 
  .about .about-box a {
      font-size: 16px;
-border: #f4b328 solid 1px;
-background-color: #f4b328;
+border: #9c0 solid 1px;
+background-color: #9c0;
 color: #fff;
 padding: 9px 0px;
 max-width: 171px;
@@ -1212,8 +1210,8 @@ border-radius: 30px;
 
 
  .about .about-box a:hover{ 
-     background-color: #200769;
-     border: #200769 solid 1px;
+     background-color: #14569D;
+     border: #14569D solid 1px;
     color: #fff;
  }
  .about .about-box figure {
@@ -1239,13 +1237,13 @@ border-radius: 30px;
      text-align: center;
 }
  .important .titlepage span {padding-top: 30px; display: inline-block; font-size: 17px;}
- .important_bg {background: #200769; padding: 60px 0px;}
+ .important_bg {background: #14569D; padding: 60px 0px;}
 .important_bg .important_box {
      text-align: center;
 }
 
 .important_bg .important_box h3 {
-     color: #f4b328;
+     color: #9c0;
      font-size: 46px;
      line-height: 46px;
      font-weight: bold;
@@ -1258,7 +1256,7 @@ border-radius: 30px;
 .important_bg .important_box span {
      font-size: 29px;
      line-height: 26px;
-     color: #f4b328;
+     color: #9c0;
      padding-top:20px;
      font-weight: 400;
      display: inline-block;
@@ -1335,10 +1333,10 @@ box-shadow: #ddd 0px 0px 0px 0px;
 .overlay {
     position: absolute;
     bottom: 0;
-    background: #200769;
+    background: #14569D;
 
 }
-.box_bg_img .box_my:hover .overlay {background: #200769bd;}
+.box_bg_img .box_my:hover .overlay {background: #14569Dbd;}
 
 
  .box_text {
@@ -1358,8 +1356,8 @@ box-shadow: #ddd 0px 0px 0px 0px;
 }
  .box_text a {
     font-size: 16px;
-border: #f4b328 solid 1px;
-background-color: #f4b328;
+border: #9c0 solid 1px;
+background-color: #9c0;
 color: #fff;
 padding: 9px 0px;
 max-width: 171px;
@@ -1372,8 +1370,8 @@ float: right;
 margin-top: 20px;
 }
  .box_text a:hover {
-     background-color: #200769;
-     border: #200769 solid 1px;
+     background-color: #14569D;
+     border: #14569D solid 1px;
      color: #fff;
 }
 .padding_left3 {padding-left: 0px;}
@@ -1387,7 +1385,7 @@ margin-top: 20px;
 /** end learn **/
 
 /** make **/
-.make {background: #200769; margin-top: 90px; padding: 50px 0px;}
+.make {background: #14569D; margin-top: 90px; padding: 50px 0px;}
 .make .titlepage {text-align: left; padding-bottom: 30px;}
 .white_colo {color: #fff;}
 .make_text p {color: #fff;}
@@ -1396,7 +1394,7 @@ margin-top: 20px;
     font-size: 16px;
 border: #fff solid 1px;
 background-color: #fff;
-color: #200769;
+color: #14569D;
 padding: 9px 0px;
 max-width: 171px;
 width: 100%;
@@ -1408,8 +1406,8 @@ float: left;
 margin-top: 20px;
 }
  .make_text a:hover {
-     background-color: #f4b328;
-     border: #f4b328 solid 1px;
+     background-color: #9c0;
+     border: #9c0 solid 1px;
      color: #fff;
 }
 
@@ -1429,11 +1427,11 @@ margin-top: 20px;
      padding-bottom: 60px;
 }
 .titlepage span {padding-top: 30px; display: inline-block; font-size: 17px; color: #000;}
-.yellow {color: #200769; font-weight: bold;}
+.yellow {color: #14569D; font-weight: bold;}
  .titlepage h2 {
      padding: 0;
      font-weight: bold;
-     color: #f4b328;
+     color: #9c0;
      line-height: 55px;
      font-size: 50px;
 }
@@ -1496,16 +1494,16 @@ margin-top: 20px;
 }
  .contact .contact_bg .send {
      font-size: 16px;
-     border: #f4b328 solid 1px;
-     background-color: #f4b328;
+     border: #9c0 solid 1px;
+     background-color: #9c0;
      color: #fff;
      padding: 11px 67px;
      float: right;
      transition: all 0.3s ease-in;
 }
  .contact .contact_bg .send:hover {
-     background-color: #200769;
-border: #200769 solid 1px;
+     background-color: #14569D;
+border: #14569D solid 1px;
 color: #fff;
 transition: all 0.3s ease-in;
 border-radius:50px; 
@@ -1555,8 +1553,8 @@ padding-bottom: 20px;
 }
 .mc4wp-form-fields .submit {
     padding: 18px 45px;
-    border: #f4b328 solid 1px;
-     background: #f4b328;
+    border: #9c0 solid 1px;
+     background: #9c0;
      color: #fff;
      margin-left: -5px;
      font-weight: 500;
@@ -1573,8 +1571,8 @@ padding-bottom: 20px;
      margin-bottom: 20px;
 }
  .submit:hover {
-     background: #200769;
-     border: #200769 solid 1px;
+     background: #14569D;
+     border: #14569D solid 1px;
      color: #fff;
      transition: all 0.3s ease-in;
 
@@ -1595,7 +1593,7 @@ padding-bottom: 20px;
      height: 30px;
 }
  ul.social_link li a img:hover {
-     background-color: #f4b328 ;
+     background-color: #9c0 ;
      border-radius: 20px;
 }
 .footer ul.menu li{
@@ -1618,12 +1616,12 @@ padding-bottom: 20px;
 .footer ul.menu li a {
      display: block;
      color: #fcfbfb;
-     font-size: 17px;
+     font-size: 15px;
      padding-left: 30px;
     
 }
 .footer ul.menu li a:hover{
-     color: #f4b328 ;
+     color: #9c0 ;
 }
  ul.Links_footer {
      list-style: none;
@@ -1640,7 +1638,7 @@ padding-bottom: 20px;
      
 }
  ul.Links_footer li a:hover{
-     color: #f4b328  ;
+     color: #9c0  ;
 }
  ul.Links_footer li {
      padding-bottom: 6px;
@@ -1685,7 +1683,7 @@ padding-bottom: 20px;
      color: #fff;
 }
  .copyright a:hover {
-     color: #f4b328 ;
+     color: #9c0 ;
 }
 .site-main {
      padding-top: 134px;
@@ -1698,6 +1696,7 @@ padding-bottom: 20px;
 
 .menu-account-container, .menu-account-container ul {
      display: inline-block;
+     margin-right: 10px;
 }
 
 .mean-last .nav-menu-search {
@@ -1715,8 +1714,8 @@ padding-bottom: 20px;
 
 [type=reset], [type=submit], button, html [type=button] {
     font-size: 16px;
-    border: #f4b328 solid 1px;
-    background-color: #f4b328;
+    border: #9c0 solid 1px;
+    background-color: #9c0;
     color: #fff;
     padding: 9px 0px;
     max-width: 171px;
@@ -1728,8 +1727,8 @@ padding-bottom: 20px;
 }
 
 [type=reset]:hover, [type=submit]:hover, button:hover, html [type=button]:hover {
-    background-color: #200769;
-    border: #200769 solid 1px;
+    background-color: #14569D;
+    border: #14569D solid 1px;
     color: #fff;
     transition: 0.5s;
     cursor: pointer;
@@ -1738,4 +1737,9 @@ padding-bottom: 20px;
     border: 1px solid gray;
     padding: 8px 12px;
     margin: 10px 0;
+}
+
+.mean-last .logo-two {
+     height: 70px;
+     width: 120px;
 }

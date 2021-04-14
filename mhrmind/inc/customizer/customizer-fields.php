@@ -41,6 +41,8 @@ class Xs_Fields{
 
 	public function mhrmind_general_setting( $guto_lite_fields ){
 
+        require get_template_directory() . '/inc/customizer/header-settings.php' ;
+
         require get_template_directory() . '/inc/customizer/footer-settings.php' ;
 
 		return $mhrmind_fields;

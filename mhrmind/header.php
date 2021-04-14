@@ -21,12 +21,13 @@
 </head>
 
 <body class="main-layout" <?php body_class(); ?>>
-<?php wp_body_open(); ?>
+<?php wp_body_open();
+$logo_two = mhrmind_option('logo_two'); ?>
 
 <!-- loader  -->
-  <div class="loader_bg">
+<div class="loader_bg">
     <div class="loader"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/loading.gif" alt="#" /></div>
-  </div>
+</div>
 <!-- end loader -->
 
 <!-- end loader -->
@@ -86,6 +87,9 @@
                 	    <form class="search-bar" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 						    <input type="text" name="s" value="Search..." onfocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search...&#39;;}">
 						</form>
+						<?php if( ! $logo_two == '' ) : ?>
+						    <img class="logo-two" src="<?php echo esc_url( $logo_two ); ?>" alt="#" />
+					    <?php endif; ?>
                    </div>              
 	             </div>
 	           </div>
