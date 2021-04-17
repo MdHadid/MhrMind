@@ -1304,6 +1304,7 @@ box-shadow: #ddd 0px 0px 0px 0px;
 }
 .box_bg_img .box_my figure img {
     width: 100%;
+    min-height: 310px;
 }
 .box_bg_img .box_my .overlay h3, .box_bg_img .box_my .overlay p {
     color: #fff;
@@ -1313,7 +1314,7 @@ box-shadow: #ddd 0px 0px 0px 0px;
     margin: 9px 0 0 0;
     padding: 0;
     padding-bottom: 9px;
-
+    font-size: 20px;
 }
 
 .box_bg_img .box_my .overlay p {
@@ -1471,8 +1472,8 @@ margin-top: 20px;
      margin-bottom: 60px;
 }
  .contact .contact_bg {
-    max-width: 541px;
-    
+    max-width: 1082px;
+    margin: 0 auto;
      padding: 0;
      padding: 60px 0px;
 }
@@ -1515,7 +1516,7 @@ border-radius:50px;
  .footer {
      background: #0f0824;
      
-     margin-top: 125px;
+     margin-top: 50px;
 }
  .footer h2 {
     color: #fff;

@@ -124,17 +124,13 @@
          top: 0;
     }
 
- 
-
-
-
 }
  @media (min-width: 1200px) and (max-width: 1500px) {
      .banner-main .carousel-caption {
          background: transparent;
     }
     .logo {
-   padding-bottom: 6px;
+   padding-bottom: 18px;
      margin-top: 0px;
 }
     .text-bg h1{

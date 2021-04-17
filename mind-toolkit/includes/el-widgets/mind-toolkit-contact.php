@@ -164,12 +164,7 @@ class Elementor_Contact_Widget extends \Elementor\Widget_Base {
 			  <div class="container-fluid padding_left2">
 			    <div class="white_color">
 			      <div class="row">
-			        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-			          <div id="map">
-			          	<?php echo __( $settings['contact_map'] ); ?>
-			          </div>
-			        </div>
-			        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+			        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 			          <form class="contact_bg">
 			            <div class="row">
 			              <div class="col-md-12">

@@ -183,6 +183,17 @@ class Elementor_Course_Widget extends \Elementor\Widget_Base {
 		);
 
 		$repeater->add_control(
+			'course_link',
+			[
+				'label' => __( 'Course Link', 'mind-toolkit' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'input_type' => 'text',
+				'placeholder' => __( 'Link', 'mind-toolkit' ),
+				'default' => __( '#', 'mind-toolkit')
+			]
+		);
+
+		$repeater->add_control(
 			'course_featured_img',
 			[
 				'label' => __( 'Course Featured Image', 'mind-toolkit' ),
@@ -238,6 +249,7 @@ class Elementor_Course_Widget extends \Elementor\Widget_Base {
 			            <div class="row">
 			              <?php foreach ( $settings['single_course'] as $item ) : ?>
 				              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+				              	<a target="_blank" href="<?php echo esc_url( $item['course_link'] ); ?>">
 				                <div class="box_my">
 				                    <?php if( ! $item['course_featured_img']['url'] == '' ) : ?>
 					                    <figure><img src="<?php echo esc_url( $item['course_featured_img']['url'] ); ?>" alt="image"></figure>
@@ -248,6 +260,7 @@ class Elementor_Course_Widget extends \Elementor\Widget_Base {
 				                  </div>
 				                </div>
 				              </div>
+				              </a>
 			              <?php endforeach; ?>
 			            </div>
 			          </div>

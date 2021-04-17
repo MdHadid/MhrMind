@@ -20,11 +20,11 @@ $copyright_text = mhrmind_option('copyright_text'); ?>
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <?php echo do_shortcode($newsletter_shortcode); ?>
+              <?php //echo do_shortcode($newsletter_shortcode); ?>
             </div>
             <div class="col-md-12">
-              <h2><?php echo wp_kses_post( $newsletter_title ); ?></h2>
-              <span><?php echo wp_kses_post( $newsletter_desc ); ?></span>
+              <h2><?php //echo wp_kses_post( $newsletter_title ); ?></h2>
+              <span><?php //echo wp_kses_post( $newsletter_desc ); ?></span>
             </div>
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
               <div class="row">
